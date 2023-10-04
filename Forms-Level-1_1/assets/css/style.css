@@ -1,0 +1,90 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+
+/* ========================================================== 
+                            Form
+========================================================== */
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+.wrapper {
+    max-width: 90rem;
+    background-color: white;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+section {
+    width: 25rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-block-start: 0.8rem;
+    padding-block-end: 0.2rem;
+}
+
+input, textarea, select {
+    padding-block: 0.5rem;
+    padding-inline: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+div.name {
+    display: flex;
+    gap: 5px;
+}
+
+span {
+    color: red;
+}
+
+input[type='submit'] {
+    background-color: rgb(77, 153, 172);
+    border: none;
+    padding-block: 0.7rem;
+    color: white;
+    margin-block-start: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+input[type='submit']:hover {
+    background-color: rgb(50, 100, 112);
+}

@@ -1,0 +1,147 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+.wrapper {
+    max-width: 90rem;
+    background-color: white;
+    margin: 1rem auto;
+    height: 100vh;
+}
+
+section {
+    width: 35rem;
+    padding-block: 1rem;
+    padding-inline: 20px;
+    margin: 0 auto;
+    background-color: rgb(31, 43, 50);
+    color: white;
+    text-align: center;
+    min-height: 500px;
+}
+
+section div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div a {
+    border: none;
+    padding-block: 1.4rem;
+    flex: 1;
+    color: white;
+    margin-block-start: 0.5rem;
+    font-size: 1.5rem;
+}
+
+a.active {
+    background-color: rgb(62, 181, 124);
+    outline: 4px inset rgb(31, 43, 50);
+}
+
+a.not__active {
+    background-color: rgb(31, 43, 50);
+}
+
+a.not__active:hover {
+    background-color: rgb(83, 204, 62);
+    outline: 4px inset rgb(31, 43, 50);
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-block: 3rem;
+    font-weight: 300;
+}
+
+/* ========================================================== 
+                            Form
+========================================================== */
+
+div.name {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    font-size: 1.5rem;
+    padding-block: 1.4rem;
+    padding-inline: 16px;
+    width: 100%;
+    background-color: rgb(31, 43, 50);
+    border: 3px inset rgb(31, 43, 50);
+    margin-block: 1rem;
+}
+
+input:focus {
+    color: rgb(62, 181, 124);
+    outline: 3px solid rgb(62, 181, 124);
+}
+
+::placeholder {
+    font-size: 1.5rem;
+}
+
+a.forgot__pwd {
+    display: inline-block;
+    color: rgb(43, 128, 26);
+    text-align: right;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    padding-block-start: 2rem;
+    padding-block-end: 0.5rem;
+}
+
+input[type='submit'] {
+    background-color: rgb(62, 181, 124);
+    padding-block: 1.5rem;
+    color: white;
+    margin-block-start: 1.5rem;
+    margin-block-end: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 4px outset rgba(0, 0, 0, 0.8);
+}
+
+input[type='submit']:active {
+    outline: none;
+    border: 4px inset rgba(0, 0, 0, 0.8);
+}

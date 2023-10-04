@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Level-1_1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <section>
+                <form action="#" method="post">
+                    <div>
+                        <label for="vorname">Name: <span>*</span></label>
+                        <div class="name">
+                            <input type="text" name="vorname" id="vorname" placeholder="Vorname" required>
+                            <input type="text" name="nachname" id="nachname" placeholder="Nachname" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail: <span>*</span></label>
+                        <input type="email" name="email" id="email"  required>
+                    </div>
+                    <div>
+                        <label for="thema">Thema:</label>
+                        <select name="thema" id="thema">
+                            <option value="general">General </option>
+                            <option value="advertise">Advertise </option>
+                            <option value="partnership">Partnership </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="nachricht">Nachricht: <span>*</span></label>
+                        <textarea name="nachricht" id="nachricht" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

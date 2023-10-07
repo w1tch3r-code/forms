@@ -50,52 +50,50 @@ section {
     margin: 0 auto;
 }
 
+form {
+    width: max(50%, 800px);
+}
+
 fieldset {
     padding-inline: 20px;
     padding-block: 1rem;
 }
 
-span, label {
-    display: inline-block;
-    padding-block: 0.2rem;
-    width: 170px;
+.input__wrapper {
+    display: flex;
+    margin-bottom: 15px;
 }
 
-input[type="text"], input[type="email"], select {
-    padding-inline: 5px;
-    padding-block: 0.2rem;
-    margin-block: 0.2rem;
+.input__wrapper label {
+    flex-basis: 10rem;
 }
 
-label[for="male"], 
-label[for="female"] {
-    display: inline;
-    padding-inline-end: 5px;
+.radio__wrapper input[type="radio"]{
+    margin-right: 20px;
 }
 
-label[for="it"], 
-label[for="design"], 
-label[for="other"] {
-    display: inline;
-    padding-inline-end: 10px;
+.preferred-languages__wrapper label {
+    align-self: center;
+}
+
+.preferred-languages__wrapper span {
+    align-self: flex-end;
 }
 
 select[name="languages"] {
     overflow-y: hidden;
-    padding-inline-end: 10px;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
+.checkbox__wrapper label{
+    margin-right: 20px;
 }
 
-label[for="languages"] {
-    width: 174px;
+.checkbox__wrapper input[type="checkbox"]{
+    margin-right: 4px;
 }
 
-.flex p {
-    align-self: flex-end;
+input:not(input[type='file']), select {
+    padding: 5px;
 }
 
 input[type="submit"], input[type="reset"] {

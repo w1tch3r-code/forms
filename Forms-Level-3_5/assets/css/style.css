@@ -1,0 +1,146 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: 'Playfair-Display';
+    src: url('./../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./../fonts/Roboto-Regular.ttf');
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+body {
+    font-family: 'Playfair-Display';
+    background-color: #808080;
+}
+
+.wrapper {
+    max-width: 112.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section__nl__registration {
+    display: flex;
+    min-height: 770px;
+}
+
+.div__mood__img {
+    width: 810px;
+    background: url('./../images/chanel.png') center / cover no-repeat;
+}
+
+.div__nl_registration {
+    position: relative;
+    max-width: 810px;
+    background-color: white;
+    text-align: center;
+    padding-inline: 70px;
+    padding-block-start: 6.25rem;
+}
+
+.div__nl_registration img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    aspect-ratio: 1 / 1;
+    transition: all 500ms ease-in-out;
+}
+
+.div__nl_registration img:hover {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.div__nl_registration div {
+    padding-inline: 75px;
+}
+
+.div__nl_registration div h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.div__nl_registration p {
+    padding-block: 3.125rem 4.375rem;
+    font-size: 1.2rem;   
+    font-weight: 400;
+}
+
+
+input[type="email"] {
+    width: 100%;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+    padding-block: 0.2rem 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+}
+
+input[type="submit"] {
+    font-family: 'Roboto';
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    padding-block: 0.8rem;
+    padding-inline: 80px;
+    box-shadow: 0px 0px 2px 0px #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #333;
+}
+
+p#thx { display: none; }
+p#thx::after {
+    content: '❤';
+    padding-left: 5px;
+    color: rgb(210, 2, 2);
+    font-size: 1.5rem;
+}

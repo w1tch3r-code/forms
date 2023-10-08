@@ -1,0 +1,142 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/Poppins-Regular.ttf');
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+body {
+    font-family: 'Poppins';
+    background: rgb(245, 245, 245) url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2434&q=80') center / cover;
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+section {
+    width: 500px;
+    padding-block: 2rem;
+    padding-inline: 40px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    min-height: 700px;
+    border-radius: 20px;
+}
+
+div.login__register {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 220px;
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #265C79 0%, #265C79 50%, #7FA9AF 100%);
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+a.active {
+    color: white;
+}
+
+a.not__active {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    outline: 4px solid black;
+    outline-offset: -14px;
+    border-radius: 50%;
+}
+
+.social__icons:hover {
+    background: linear-gradient(to right, rgba(38, 92, 121, 0.4) 0%, rgba(127, 169, 175, 0.2) 100%);
+}
+
+svg {
+    fill: rgb(0, 0, 0);
+}
+
+
+/* ========================================================== 
+                            Form
+========================================================== */
+
+input:not([type='submit'], [type='checkbox']) {
+    width: 100%;
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.1rem;
+    margin-block: 0.5rem;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+}
+
+.checkbox__wrapper {
+    text-align: left;
+    padding-block: 40px;
+}
+
+input[type='submit'] {
+    width: 100%;
+    background: linear-gradient(to right, #265C79 0%, #7FA9AF 100%);
+    border: none;
+    padding-block: 10px;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+input[type='submit']:active {
+    box-shadow: none;
+}
